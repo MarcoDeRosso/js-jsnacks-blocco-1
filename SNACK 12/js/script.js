@@ -10,7 +10,7 @@ var arreyCognomi = ["Rossi", "Bianchi", "Fabbri", "Verdi", "Scudo"]
 var result = " ";
 
 for (var i = 1; i <= 3; i++) {
-    result += "<li>" + arreyNomi[Math.floor(Math.random() * 7)] + " " + arreyCognomi[Math.floor(Math.random() * 5)] + "</li>";
+    result += "<li>" + arreyNomi[Math.floor(Math.random() * arreyNomi.length)] + " " + arreyCognomi[Math.floor(Math.random() * arreyCognomi.length)] + "</li>";
 }
 
 output.innerHTML = result + "<br/>";
