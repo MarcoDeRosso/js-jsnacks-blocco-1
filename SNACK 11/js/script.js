@@ -11,7 +11,7 @@ while (isNaN(userNumber)) {
 
 }
 
-if (0 === userNumber % 2 && isNaN(userNumber)) {
+if (0 === userNumber % 2) {
     output.innerHTML = userNumber;
 } else {
     output.innerHTML = userNumber + 1;
