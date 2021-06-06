@@ -6,7 +6,10 @@ var List = [];
 
 
 var output = document.getElementById("numero");
+while (isNaN(numeroList)) {
+    var output = document.getElementById("numero");
 
+}
 for (var i = 1; i <= 6; i++) {
     var numeroList = parseInt(prompt("Inserire NUMERO"));
 

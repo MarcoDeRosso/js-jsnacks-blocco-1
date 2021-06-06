@@ -5,7 +5,13 @@ var output = document.getElementById("numero");
 
 var userNumber = parseInt(prompt("inserisci un numero"));
 
-if (0 === userNumber % 2) {
+while (isNaN(userNumber)) {
+    alert("Devi inserire un numero");
+    var userNumber = parseInt(prompt("inserisci un numero"));
+
+}
+
+if (0 === userNumber % 2 && isNaN(userNumber)) {
     output.innerHTML = userNumber;
 } else {
     output.innerHTML = userNumber + 1;

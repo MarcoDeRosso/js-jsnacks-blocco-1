@@ -3,8 +3,13 @@
 
 var numeroList = parseInt(prompt("Inserire NUMERO"));
 var output = document.getElementById("numero");
+
+
+while (isNaN(numeroList)) {
+    var numeroList = parseInt(prompt("Inserire NUMERO"));
+
+}
+
 for (var i = 0; i <= numeroList; i++) {
     output.innerHTML += Math.pow(i, 3) + "</br>";
 }
-
-console.log(list);

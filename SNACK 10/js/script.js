@@ -26,6 +26,7 @@ var result = 0;
 for (var y = 1; y <= 5; y++) {
     var userNumber = parseInt(prompt("inserire un numero"))
     while (isNaN(userNumber)) {
+        alert("Devi inserire un numero")
         var userNumber = parseInt(prompt("inserire un numero"))
     }
     result += userNumber;
