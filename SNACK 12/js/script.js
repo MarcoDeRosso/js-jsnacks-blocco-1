@@ -5,12 +5,16 @@ var output = document.getElementById("numero");
 
 var arreyNomi = ["Luca", "Paolo", "Chiara", "Silvia", "Valerio", "Nicola", "Andrea"];
 
-var arreyCognomi = ["Rossi", "Bianchi", "Fabbri", "Verdi", "Scudo"]
+var arreyCognomi = ["Rossi", "Bianchi", "Fabbri", "Verdi", "Scudo"];
 
-var result = " ";
+var arreyLista = [];
 
-for (var i = 1; i <= 3; i++) {
-    result += "<li>" + arreyNomi[Math.floor(Math.random() * arreyNomi.length)] + " " + arreyCognomi[Math.floor(Math.random() * arreyCognomi.length)] + "</li>";
+while (arreyLista.length < 3) {
+    randomName = arreyNomi[Math.floor(Math.random() * arreyNomi.length)];
+    randomSurname = arreyCognomi[Math.floor(Math.random() * arreyCognomi.length)];
+    invitato = randomName + " " + randomSurname;
+    if (!arreyLista.includes(invitato)) {
+        output.innerHTML += "<li>" + invitato + "</li>";
+        arreyLista.push(invitato);
+    }
 }
-
-output.innerHTML = result + "<br/>";
